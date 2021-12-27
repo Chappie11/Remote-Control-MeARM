@@ -26,7 +26,6 @@ if( keyPressed) {
         port.write('R');
       }
       
-    
       if (keyCode == UP){
         port.write('U');
       }
@@ -39,24 +38,21 @@ if( keyPressed) {
         port.write('A');
       }
       
-      if (key == 'S'|| key=='s'){// && keyCode != LEFT) 
-        //println('S');
+      if (key == 'S'|| key=='s'){
         port.write('S');
       }
       
-      if (key == 'X'|| key=='x'){// && keyCode != 'S') {
-        //println('X');
+      if (key == 'X'|| key=='x'){
         port.write('X');
       }
       
-      if (key == 'Z' || key=='z'){// && keyCode != LEFT) 
-      // println('Z');
+      if (key == 'Z' || key=='z'){
         port.write('Z');
       }
-      delay(100);
       
+      delay(100);
+     
     }    
-}
-
+  }
 }
   

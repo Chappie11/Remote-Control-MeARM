@@ -23,10 +23,7 @@ void setup() {
 
 void loop() {
   
-  
   if (Serial.available() > 0) {
-    
-
     
     incomingByte = Serial.read();
     
@@ -71,12 +68,13 @@ void loop() {
       Middle.write(MyPosition3);
       Serial.flush();
     }
+    
     else if(incomingByte == 'S') {
       MyPosition4 = MyPosition4 - 2;
       Left.write(MyPosition4);
       Serial.flush();
     }
-  
+    
     delay(100);
     Serial.flush();
   }
