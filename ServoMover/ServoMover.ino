@@ -77,8 +77,7 @@ void loop() {
     
     delay(100);
     Serial.flush();
-  }
-}
-
-
-        
+    
+  } // if (Serial.available() > 0)
+  
+} // void loop() 
